@@ -14,6 +14,14 @@ body{
   background-repeat: no-repeat;
 }
 
+@media (max-width: 600px) {
+  .aContainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 body::after {
   content: "";
   background-image: url('img/bg.png');
@@ -25,7 +33,7 @@ body::after {
   height: 100%;
   width: 100%;
   z-index: -1;
-
+}
 #title{
   font-size: 3em;
   text-align: center;
