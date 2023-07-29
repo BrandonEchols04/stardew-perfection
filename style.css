@@ -22,6 +22,12 @@ body{
   }
 }
 
+@media only screen and (max-device-width: 1366px) {
+  body {
+    background-attachment: scroll;
+  }
+}
+
 body::after {
   content: "";
   background-image: url('img/bg.png');
