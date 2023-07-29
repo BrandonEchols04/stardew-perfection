@@ -1,0 +1,188 @@
+@font-face {
+  font-family: 'sv';
+  src: url('fonts/SV.ttf');
+  font-style: normal;
+  font-weight: 100;
+
+}
+
+body{
+  background-color: #333333;
+  font-family: sv;
+  background-image: url('img/bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#title{
+  font-size: 3em;
+  text-align: center;
+  user-select: none;
+}
+
+#containerTop{
+  margin: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 1.2em;
+  font-family: sv;
+	color: #FFFFFF;
+	background-color: #333333;
+	border-radius: 8px;
+	padding: 13px;
+	width: 1000px;
+    -webkit-filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.75));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
+	display: block;
+  line-height: normal;
+}
+
+#containerBottom{
+  margin: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 1.2em;
+  font-family: sv;
+	color: #FFFFFF;
+	background-color: #333333;
+	border-radius: 8px;
+	padding: 13px;
+	width: 1000px;
+    -webkit-filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.75));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
+	display: flex;
+  flex-direction: column;
+  line-height: normal;
+}
+
+#containerOptions{
+  margin: auto;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	font-size: 1.2em;
+  font-family: sv;
+	color: #FFFFFF;
+	background-color: #333333;
+	border-radius: 8px;
+	padding: 13px;
+	width: 1000px;
+    -webkit-filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.75));
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
+	display: flex;
+  flex-direction: row;
+  line-height: normal;
+}
+
+.overall{
+  line-height: 15px;
+  user-select: none;
+  font-size: 2.5em;
+}
+
+.per{
+  line-height: 10px;
+  user-select: none;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #3B3B3B;
+  background-color: #393939;
+  font-family: sv;
+  font-size: 0.93845em;
+  color: #FFFFFF;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-family: sv;
+  font-size: 0.93845em;
+  color: #FFFFFF;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #444444;
+  font-family: sv;
+  font-size: 0.93845em;
+  color: #FFFFFF;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #999999;
+  font-family: sv;
+  font-size: 0.93845em;
+  color: #FFFFFF;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #3B3B3B;
+  border-top: none;
+  font-family: sv;
+  font-size: 0.93845em;
+  color: #FFFFFF;
+}
+
+.friendshipdd {
+    display: inline-block;
+    width: 100px;
+    line-height: 35px
+}
+
+.tablinks{
+  user-select: none;
+}
+
+.checkbox{
+  width: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+  font-size: 16px;
+  background-color: #393939;
+  color: #FFFFFF;
+  font-family: sv;
+  border: 1px solid #3B3B3B;
+}
+
+select {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+    font-size: 16px;
+    background-color: #393939;
+    color: #FFFFFF;
+    font-family: sv;
+    border: 1px solid #3B3B3B;
+  }
+
+.multiplayer{
+  font-size: 1.3em;
+}

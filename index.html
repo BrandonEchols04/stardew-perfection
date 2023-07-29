@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Stardew 100% Calculator</title>
+      <link href="style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+      <main>
+
+        <h1 id="title">Stardew Valley 100% Calculator</h1>
+
+        <div id="containerTop">
+
+          <h1 class="overall">Overall: 0%</h1>
+          <h3 class="per">Items Shipped: 0%</h3>
+          <h3 class="per">Farm Buildings Built: 0%</h3>
+          <h3 class="per">Monster Eradication Goals Completed: 0%</h3>
+          <h3 class="per">Villager Friendship Levels Maxed: 0%</h3>
+          <h3 class="per">Skill Levels Aquired: 0%</h3>
+          <h3 class="per">Stardrops Aquired: 0%</h3>
+          <h3 class="per">Recipes Cooked: 0%</h3>
+          <h3 class="per">Recipes Crafted: 0%</h3>
+          <h3 class="per">Fish Caught: 0%</h3>
+          <h3 class="per">Golden Walnuts Found: 0%</h3>
+
+        </div>
+
+        <div id="containerOptions">
+
+          <input type="checkbox" id="z1" name="z1" class="checkbox">
+          &nbsp<label for="z1" class="multiplayer">Are you playing singleplayer?</label><br>
+
+        </div>
+
+        <div id="containerBottom">
+          <!-- Tab links -->
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'itemsShipped')" id="defaultOpen">Items Shipped</button>
+            <button class="tablinks" onclick="openTab(event, 'buildings')">Buildings</button>
+            <button class="tablinks" onclick="openTab(event, 'monsterEradication')">Monster Eradication</button>
+            <button class="tablinks" onclick="openTab(event, 'friendship')">Friendship</button>
+            <button class="tablinks" onclick="openTab(event, 'skills')">Skills</button>
+            <button class="tablinks" onclick="openTab(event, 'stardrops')">Stardrops</button>
+            <button class="tablinks" onclick="openTab(event, 'recipesCooked')">Recipes Cooked</button>
+            <button class="tablinks" onclick="openTab(event, 'recipesCrafted')">Recipes Crafted</button>
+            <button class="tablinks" onclick="openTab(event, 'fish')">Fish</button>
+            <button class="tablinks" onclick="openTab(event, 'walnuts')">Walnuts</button>
+          </div>
+
+          <!-- Tab content -->
+          <div id="itemsShipped" class="tabcontent">
+            <input type="checkbox" id="a1" name="a1" class="checkbox" class="class1">
+            <label for="a1">Wild Horseradish</label><br>
+
+            <input type="checkbox" id="a2" name="a2" class="checkbox" class="class1">
+            <label for="a2">Daffodil</label><br>
+
+            <input type="checkbox" id="a3" name="a3" class="checkbox" class="class1">
+            <label for="a3">Leek</label><br>
+
+            <input type="checkbox" id="a4" name="a4" class="checkbox" class="class1">
+            <label for="a4">Dandelion</label><br>
+
+            <input type="checkbox" id="a5" name="a5" class="checkbox" class="class1">
+            <label for="a5">Parsnip</label><br>
+
+            <input type="checkbox" id="a6" name="a6" class="checkbox" class="class1">
+            <label for="a6">Cave Carrot</label><br>
+
+            <input type="checkbox" id="a7" name="a7" class="checkbox" class="class1">
+            <label for="a7">Coconut</label><br>
+
+            <input type="checkbox" id="a8" name="a8" class="checkbox" class="class1">
+            <label for="a8">Cactus Fruit</label><br>
+
+            <input type="checkbox" id="a9" name="a9" class="checkbox" class="class1">
+            <label for="a9">Banana</label><br>
+
+            <input type="checkbox" id="a10" name="a10" class="checkbox" class="class1">
+            <label for="a10">Sap</label><br>
+
+            <input type="checkbox" id="a11" name="a11" class="checkbox" class="class1">
+            <label for="a11">Iridium Ore</label><br>
+
+            <input type="checkbox" id="a12" name="a12" class="checkbox" class="class1">
+            <label for="a12">Wood</label><br>
+
+            <input type="checkbox" id="a13" name="a13" class="checkbox" class="class1">
+            <label for="a13">Stone</label><br>
+
+            <input type="checkbox" id="a14" name="a14" class="checkbox" class="class1">
+            <label for="a14">Nautilus Shell</label><br>
+
+            <input type="checkbox" id="a15" name="a15" class="checkbox" class="class1">
+            <label for="a15">Coral</label><br>
+
+            <input type="checkbox" id="a16" name="a16" class="checkbox" class="class1">
+            <label for="a16">Rainbow Shell</label><br>
+
+            <input type="checkbox" id="a17" name="a17" class="checkbox" class="class1">
+            <label for="a17">Spice Berry</label><br>
+
+            <input type="checkbox" id="a18" name="a18" class="checkbox" class="class1">
+            <label for="a18">Sea Urchin</label><br>
+
+            <input type="checkbox" id="a19" name="a19" class="checkbox" class="class1">
+            <label for="a19">Grape</label><br>
+
+            <input type="checkbox" id="a20" name="a20" class="checkbox" class="class1">
+            <label for="a20">Spring Onion</label><br>
+
+            <input type="checkbox" id="a21" name="a21" class="checkbox" class="class1">
+            <label for="a21">Cinder Shard</label><br>
+
+            <input type="checkbox" id="a22" name="a22" class="checkbox" class="class1">
+            <label for="a22">Magma Cap</label><br>
+
+            <input type="checkbox" id="a23" name="a23" class="checkbox" class="class1">
+            <label for="a23">Bone Fragment</label><br>
+
+            <input type="checkbox" id="a24" name="a24" class="checkbox" class="class1">
+            <label for="a24">Radioactive Ore</label><br>
+
+            <input type="checkbox" id="a25" name="a25" class="checkbox" class="class1">
+            <label for="a25">Radioactive Bar</label><br>
+
+            <input type="checkbox" id="a26" name="a26" class="checkbox" class="class1">
+            <label for="a26">Large Egg (white)</label><br>
+
+            <input type="checkbox" id="a27" name="a27" class="checkbox" class="class1">
+            <label for="a27">Egg (white)</label><br>
+
+            <input type="checkbox" id="a28" name="a28" class="checkbox" class="class1">
+            <label for="a28">Egg (brown)</label><br>
+
+            <input type="checkbox" id="a29" name="a29" class="checkbox" class="class1">
+            <label for="a29">Large Egg (brown)</label><br>
+
+            <input type="checkbox" id="a30" name="a30" class="checkbox" class="class1">
+            <label for="a30">Milk</label><br>
+
+            <input type="checkbox" id="a31" name="a31" class="checkbox" class="class1">
+            <label for="a31">Large Milk</label><br>
+
+            <input type="checkbox" id="a32" name="a32" class="checkbox" class="class1">
+            <label for="a32">Green Bean</label><br>
+
+            <input type="checkbox" id="a33" name="a33" class="checkbox" class="class1">
+            <label for="a33">Cauliflower</label><br>
+
+            <input type="checkbox" id="a34" name="a34" class="checkbox" class="class1">
+            <label for="a34">Potato</label><br>
+
+            <input type="checkbox" id="a35" name="a35" class="checkbox" class="class1">
+            <label for="a35">Garlic</label><br>
+
+            <input type="checkbox" id="a36" name="a36" class="checkbox" class="class1">
+            <label for="a36">Strawberry</label><br>
+
+            <input type="checkbox" id="a37" name="a37" class="checkbox" class="class1">
+            <label for="a37">Sweet Pea</label><br>
+
+            <input type="checkbox" id="a38" name="a38" class="checkbox" class="class1">
+            <label for="a38">Common Mushroom</label><br>
+
+            <input type="checkbox" id="a39" name="a39" class="checkbox" class="class1">
+            <label for="a39">Wild Plum</label><br>
+
+            <input type="checkbox" id="a40" name="a40" class="checkbox" class="class1">
+            <label for="a40">Hazelnut</label><br>
+
+            <input type="checkbox" id="a41" name="a41" class="checkbox" class="class1">
+            <label for="a41">Blackberry</label><br>
+
+            <input type="checkbox" id="a42" name="a42" class="checkbox" class="class1">
+            <label for="a42">Winter Root</label><br>
+
+            <input type="checkbox" id="a43" name="a43" class="checkbox" class="class1">
+            <label for="a43">Crystal Fruit</label><br>
+
+            <input type="checkbox" id="a44" name="a44" class="checkbox" class="class1">
+            <label for="a44">Snow Yam</label><br>
+
+            <input type="checkbox" id="a45" name="a45" class="checkbox" class="class1">
+            <label for="a45">Sweet Gem Berry</label><br>
+
+            <input type="checkbox" id="a46" name="a46" class="checkbox" class="class1">
+            <label for="a46">Kale</label><br>
+
+            <input type="checkbox" id="a47" name="a47" class="checkbox" class="class1">
+            <label for="a47">Rhubarb</label><br>
+
+            <input type="checkbox" id="a48" name="a48" class="checkbox" class="class1">
+            <label for="a48">Melon</label><br>
+
+            <input type="checkbox" id="a49" name="a49" class="checkbox" class="class1">
+            <label for="a49">Tomato</label><br>
+
+            <input type="checkbox" id="a50" name="a50" class="checkbox" class="class1">
+            <label for="a50">Morel</label><br>
+
+            <input type="checkbox" id="a51" name="a51" class="checkbox" class="class1">
+            <label for="a51">Blueberry</label><br>
+
+            <input type="checkbox" id="a52" name="a52" class="checkbox" class="class1">
+            <label for="a52">Fiddlehead Fern</label><br>
+
+            <input type="checkbox" id="a53" name="a53" class="checkbox" class="class1">
+            <label for="a53">Hot Pepper</label><br>
+
+            <input type="checkbox" id="a54" name="a54" class="checkbox" class="class1">
+            <label for="a54">Wheat</label><br>
+
+            <input type="checkbox" id="a55" name="a55" class="checkbox" class="class1">
+            <label for="a55">Radish</label><br>
+
+            <input type="checkbox" id="a56" name="a56" class="checkbox" class="class1">
+            <label for="a56">Crocus</label><br>
+
+            <input type="checkbox" id="a57" name="a57" class="checkbox" class="class1">
+            <label for="a57">Red Mushroom</label><br>
+
+            <input type="checkbox" id="a58" name="a58" class="checkbox" class="class1">
+            <label for="a58">Sunflower</label><br>
+
+            <input type="checkbox" id="a59" name="a59" class="checkbox" class="class1">
+            <label for="a59">Purple Mushroom</label><br>
+
+            <input type="checkbox" id="a60" name="a60" class="checkbox" class="class1">
+            <label for="a60">Cheese</label><br>
+
+            <input type="checkbox" id="a61" name="a61" class="checkbox" class="class1">
+            <label for="a61">Goat Cheese</label><br>
+
+            <input type="checkbox" id="a62" name="a62" class="checkbox" class="class1">
+            <label for="a62">Cloth</label><br>
+
+            <input type="checkbox" id="a63" name="a63" class="checkbox" class="class1">
+            <label for="a63">Truffle</label><br>
+
+            <input type="checkbox" id="a64" name="a64" class="checkbox" class="class1">
+            <label for="a64">Truffle Oil</label><br>
+
+            <input type="checkbox" id="a65" name="a65" class="checkbox" class="class1">
+            <label for="a65">Coffee Bean</label><br>
+
+            <input type="checkbox" id="a66" name="a66" class="checkbox" class="class1">
+            <label for="a66">Red Cabbage</label><br>
+
+            <input type="checkbox" id="a67" name="a67" class="checkbox" class="class1">
+            <label for="a67">Starfruit</label><br>
+
+            <input type="checkbox" id="a68" name="a68" class="checkbox" class="class1">
+            <label for="a68">Corn</label><br>
+
+            <input type="checkbox" id="a69" name="a69" class="checkbox" class="class1">
+            <label for="a69">Unmilled Rice</label><br>
+
+            <input type="checkbox" id="a70" name="a70" class="checkbox" class="class1">
+            <label for="a70">Eggplant</label><br>
+
+            <input type="checkbox" id="a71" name="a71" class="checkbox" class="class1">
+            <label for="a71">Artichoke</label><br>
+
+            <input type="checkbox" id="a72" name="a72" class="checkbox" class="class1">
+            <label for="a72">Pumpkin</label><br>
+
+            <input type="checkbox" id="a73" name="a73" class="checkbox" class="class1">
+            <label for="a73">Bok Choy</label><br>
+
+            <input type="checkbox" id="a74" name="a74" class="checkbox" class="class1">
+            <label for="a74">Yam</label><br>
+
+            <input type="checkbox" id="a75" name="a75" class="checkbox" class="class1">
+            <label for="a75">Chanterelle</label><br>
+
+            <input type="checkbox" id="a76" name="a76" class="checkbox" class="class1">
+            <label for="a76">Goat Milk</label><br>
+
+            <input type="checkbox" id="a77" name="a77" class="checkbox" class="class1">
+            <label for="a77">Large Goat Milk</label><br>
+
+            <input type="checkbox" id="a78" name="a78" class="checkbox" class="class1">
+            <label for="a78">Wool</label><br>
+
+            <input type="checkbox" id="a79" name="a79" class="checkbox" class="class1">
+            <label for="a79">Duck Egg</label><br>
+
+            <input type="checkbox" id="a80" name="a80" class="checkbox" class="class1">
+            <label for="a80">Duck Feather</label><br>
+
+            <input type="checkbox" id="a81" name="a81" class="checkbox" class="class1">
+            <label for="a81">Caviar</label><br>
+
+            <input type="checkbox" id="a82" name="a82" class="checkbox" class="class1">
+            <label for="a82">Rabbit's Foot</label><br>
+
+            <input type="checkbox" id="a83" name="a83" class="checkbox" class="class1">
+            <label for="a83">Aged Roe</label><br>
+
+            <input type="checkbox" id="a84" name="a84" class="checkbox" class="class1">
+            <label for="a84">Ancient Fruit</label><br>
+
+            <input type="checkbox" id="a85" name="a85" class="checkbox" class="class1">
+            <label for="a85">Mead</label><br>
+
+            <input type="checkbox" id="a86" name="a86" class="checkbox" class="class1">
+            <label for="a86">Cranberries</label><br>
+
+            <input type="checkbox" id="a87" name="a87" class="checkbox" class="class1">
+            <label for="a87">Holly</label><br>
+
+            <input type="checkbox" id="a88" name="a88" class="checkbox" class="class1">
+            <label for="a88">Beet</label><br>
+
+            <input type="checkbox" id="a89" name="a89" class="checkbox" class="class1">
+            <label for="a89">Ostrich Egg</label><br>
+
+            <input type="checkbox" id="a90" name="a90" class="checkbox" class="class1">
+            <label for="a90">Salmonberry</label><br>
+
+            <input type="checkbox" id="a91" name="a91" class="checkbox" class="class1">
+            <label for="a91">Amaranth</label><br>
+
+            <input type="checkbox" id="a92" name="a92" class="checkbox" class="class1">
+            <label for="a92">Pale Ale</label><br>
+
+            <input type="checkbox" id="a93" name="a93" class="checkbox" class="class1">
+            <label for="a93">Hops</label><br>
+
+            <input type="checkbox" id="a94" name="a94" class="checkbox" class="class1">
+            <label for="a94">Void Egg</label><br>
+
+            <input type="checkbox" id="a95" name="a95" class="checkbox" class="class1">
+            <label for="a95">Mayonnaise</label><br>
+
+            <input type="checkbox" id="a96" name="a96" class="checkbox" class="class1">
+            <label for="a96">Tulip</label><br>
+
+            <input type="checkbox" id="a97" name="a97" class="checkbox" class="class1">
+            <label for="a97">Summer Spangle</label><br>
+
+            <input type="checkbox" id="a98" name="a98" class="checkbox" class="class1">
+            <label for="a98">Fairy Rose</label><br>
+
+            <input type="checkbox" id="a99" name="a99" class="checkbox" class="class1">
+            <label for="a99">Blue Jazz</label><br>
+
+            <input type="checkbox" id="a100" name="a100" class="checkbox" class="class1">
+            <label for="a100">Apple</label><br>
+
+            <input type="checkbox" id="a101" name="a101" class="checkbox" class="class1">
+            <label for="a101">Green Tea</label><br>
+
+            <input type="checkbox" id="a102" name="a102" class="checkbox" class="class1">
+            <label for="a102">Apricot</label><br>
+
+            <input type="checkbox" id="a103" name="a103" class="checkbox" class="class1">
+            <label for="a103">Orange</label><br>
+
+            <input type="checkbox" id="a104" name="a104" class="checkbox" class="class1">
+            <label for="a104">Peach</label><br>
+
+            <input type="checkbox" id="a105" name="a105" class="checkbox" class="class1">
+            <label for="a105">Pomegranate</label><br>
+
+            <input type="checkbox" id="a106" name="a106" class="checkbox" class="class1">
+            <label for="a106">Duck Mayonnaise</label><br>
+
+            <input type="checkbox" id="a107" name="a107" class="checkbox" class="class1">
+            <label for="a107">Void Mayonnaise</label><br>
+
+            <input type="checkbox" id="a108" name="a108" class="checkbox" class="class1">
+            <label for="a108">Clay</label><br>
+
+            <input type="checkbox" id="a109" name="a109" class="checkbox" class="class1">
+            <label for="a109">Copper Bar</label><br>
+
+            <input type="checkbox" id="a110" name="a110" class="checkbox" class="class1">
+            <label for="a110">Iron Bar</label><br>
+
+            <input type="checkbox" id="a111" name="a111" class="checkbox" class="class1">
+            <label for="a111">Gold Bar</label><br>
+
+            <input type="checkbox" id="a112" name="a112" class="checkbox" class="class1">
+            <label for="a112">Iridium Bar</label><br>
+
+            <input type="checkbox" id="a113" name="a113" class="checkbox" class="class1">
+            <label for="a113">Refined Quartz</label><br>
+
+            <input type="checkbox" id="a114" name="a114" class="checkbox" class="class1">
+            <label for="a114">Honey (any)</label><br>
+
+            <input type="checkbox" id="a115" name="a115" class="checkbox" class="class1">
+            <label for="a115">Pickles (any)</label><br>
+
+            <input type="checkbox" id="a116" name="a116" class="checkbox" class="class1">
+            <label for="a116">Cherry</label><br>
+
+            <input type="checkbox" id="a117" name="a117" class="checkbox" class="class1">
+            <label for="a117">Bug Meat</label><br>
+
+            <input type="checkbox" id="a118" name="a118" class="checkbox" class="class1">
+            <label for="a118">Hardwood</label><br>
+
+            <input type="checkbox" id="a119" name="a119" class="checkbox" class="class1">
+            <label for="a119">Maple Syrup</label><br>
+
+            <input type="checkbox" id="a120" name="a120" class="checkbox" class="class1">
+            <label for="a120">Oak Resin</label><br>
+
+            <input type="checkbox" id="a121" name="a121" class="checkbox" class="class1">
+            <label for="a121">Pine Tar</label><br>
+
+            <input type="checkbox" id="a122" name="a122" class="checkbox" class="class1">
+            <label for="a122">Slime</label><br>
+
+            <input type="checkbox" id="a123" name="a123" class="checkbox" class="class1">
+            <label for="a123">Bat Wing</label><br>
+
+            <input type="checkbox" id="a124" name="a124" class="checkbox" class="class1">
+            <label for="a124">Solar Essence</label><br>
+
+            <input type="checkbox" id="a125" name="a125" class="checkbox" class="class1">
+            <label for="a125">Void Essence</label><br>
+
+            <input type="checkbox" id="a126" name="a126" class="checkbox" class="class1">
+            <label for="a126">Jelly (any)</label><br>
+
+            <input type="checkbox" id="a127" name="a127" class="checkbox" class="class1">
+            <label for="a127">Beer</label><br>
+
+            <input type="checkbox" id="a128" name="a128" class="checkbox" class="class1">
+            <label for="a128">Wine (any)</label><br>
+
+            <input type="checkbox" id="a129" name="a129" class="checkbox" class="class1">
+            <label for="a129">Juice (any)</label><br>
+
+            <input type="checkbox" id="a130" name="a130" class="checkbox" class="class1">
+            <label for="a130">Clam</label><br>
+
+            <input type="checkbox" id="a131" name="a131" class="checkbox" class="class1">
+            <label for="a131">Poppy</label><br>
+
+            <input type="checkbox" id="a132" name="a132" class="checkbox" class="class1">
+            <label for="a132">Copper Ore</label><br>
+
+            <input type="checkbox" id="a133" name="a133" class="checkbox" class="class1">
+            <label for="a133">Iron Ore</label><br>
+
+            <input type="checkbox" id="a134" name="a134" class="checkbox" class="class1">
+            <label for="a134">Coal</label><br>
+
+            <input type="checkbox" id="a135" name="a135" class="checkbox" class="class1">
+            <label for="a135">Gold Ore</label><br>
+
+            <input type="checkbox" id="a136" name="a136" class="checkbox" class="class1">
+            <label for="a136">Fiber</label><br>
+
+            <input type="checkbox" id="a137" name="a137" class="checkbox" class="class1">
+            <label for="a137">Battery Pack</label><br>
+
+            <input type="checkbox" id="a138" name="a138" class="checkbox" class="class1">
+            <label for="a138">Dinosaur Mayonnaise</label><br>
+
+            <input type="checkbox" id="a139" name="a139" class="checkbox" class="class1">
+            <label for="a139">Roe (any)</label><br>
+
+            <input type="checkbox" id="a140" name="a140" class="checkbox" class="class1">
+            <label for="a140">Squid Ink</label><br>
+
+            <input type="checkbox" id="a141" name="a141" class="checkbox" class="class1">
+            <label for="a141">Tea Leaves</label><br>
+
+            <input type="checkbox" id="a142" name="a142" class="checkbox" class="class1">
+            <label for="a142">Ginger</label><br>
+
+            <input type="checkbox" id="a143" name="a143" class="checkbox" class="class1">
+            <label for="a143">Taro Root</label><br>
+
+            <input type="checkbox" id="a144" name="a144" class="checkbox" class="class1">
+            <label for="a144">Pineapple</label><br>
+
+            <input type="checkbox" id="a145" name="a145" class="checkbox" class="class1">
+            <label for="a145">Mango</label><br>
+
+          </div>
+
+          <div id="buildings" class="tabcontent">
+            <input type="checkbox" id="b1" name="b1" class="checkbox" class="class2">
+            <label for="b1">Earth Obelisk</label><br>
+
+            <input type="checkbox" id="b2" name="b2" class="checkbox" class="class2">
+            <label for="b2">Water Obelisk</label><br>
+
+            <input type="checkbox" id="b3" name="b3" class="checkbox" class="class2">
+            <label for="b3">Desert Obelisk</label><br>
+
+            <input type="checkbox" id="b4" name="b4" class="checkbox" class="class2">
+            <label for="b4">Island Obelisk</label><br>
+
+            <input type="checkbox" id="b5" name="b5" class="checkbox" class="class3">
+            <label for="b5">Gold Clock</label><br>
+
+          </div>
+
+          <div id="monsterEradication" class="tabcontent">
+            <input type="checkbox" id="c1" name="c1" class="checkbox" class="class4">
+            <label for="c1">1000 Slimes</label><br>
+
+            <input type="checkbox" id="c2" name="c2" class="checkbox" class="class4">
+            <label for="c2">150 Void Spirits</label><br>
+
+            <input type="checkbox" id="c3" name="c3" class="checkbox" class="class4">
+            <label for="c3">200 Bats</label><br>
+
+            <input type="checkbox" id="c4" name="c4" class="checkbox" class="class4">
+            <label for="c4">50 Skeletons</label><br>
+
+            <input type="checkbox" id="c5" name="c5" class="checkbox" class="class4">
+            <label for="c5">125 Cave Insects</label><br>
+
+            <input type="checkbox" id="c6" name="c6" class="checkbox" class="class4">
+            <label for="c6">30 Duggies</label><br>
+
+            <input type="checkbox" id="c7" name="c7" class="checkbox" class="class4">
+            <label for="c7">500 Dust Sprites</label><br>
+
+            <input type="checkbox" id="c8" name="c8" class="checkbox" class="class4">
+            <label for="c8">60 Rock Crabs</label><br>
+
+            <input type="checkbox" id="c9" name="c9" class="checkbox" class="class4">
+            <label for="c9">100 Mummies</label><br>
+
+            <input type="checkbox" id="c10" name="c10" class="checkbox" class="class4">
+            <label for="c10">50 Pepper Rex</label><br>
+
+            <input type="checkbox" id="c11" name="c11" class="checkbox" class="class4">
+            <label for="c11">250 Serpents</label><br>
+
+            <input type="checkbox" id="c12" name="c12" class="checkbox" class="class4">
+            <label for="c12">150 Magma Sprites</label><br>
+
+          </div>
+
+          <div id="friendship" class="tabcontent">
+            <label for="d1" class="friendshipdd">Alex:</label>
+            <select id="d1" name="d1" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d2" class="friendshipdd">Elliot:</label>
+            <select id="d2" name="d2" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d3" class="friendshipdd">Harvey:</label>
+            <select id="d3" name="d3" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d4" class="friendshipdd">Sam:</label>
+            <select id="d4" name="d4" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d5" class="friendshipdd">Sebastian:</label>
+            <select id="d5" name="d5" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d6" class="friendshipdd">Shane:</label>
+            <select id="d6" name="d6" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d7" class="friendshipdd">Abigail:</label>
+            <select id="d7" name="d7" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d8" class="friendshipdd">Emily:</label>
+            <select id="d8" name="d8" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d9" class="friendshipdd">Haley:</label>
+            <select id="d9" name="d9" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d10" class="friendshipdd">Leah:</label>
+            <select id="d10" name="d10" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d11" class="friendshipdd">Maru:</label>
+            <select id="d11" name="d11" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d12" class="friendshipdd">Penny:</label>
+            <select id="d12" name="d12" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select><br>
+
+            <label for="d13" class="friendshipdd">Caroline:</label>
+            <select id="d13" name="d13" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d14" class="friendshipdd">Clint:</label>
+            <select id="d14" name="d14" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d15" class="friendshipdd">Demetrius:</label>
+            <select id="d15" name="d15" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d16" class="friendshipdd">Dwarf:</label>
+            <select id="d16" name="d16" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d17" class="friendshipdd">Evelyn:</label>
+            <select id="d17" name="d17" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d18" class="friendshipdd">George:</label>
+            <select id="d18" name="d18" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d19" class="friendshipdd">Gus:</label>
+            <select id="d19" name="d19" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d20" class="friendshipdd">Jas:</label>
+            <select id="d20" name="d20" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d21" class="friendshipdd">Jodi:</label>
+            <select id="d21" name="d21" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d22" class="friendshipdd">Kent:</label>
+            <select id="d22" name="d22" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d23" class="friendshipdd">Krobus:</label>
+            <select id="d23" name="d23" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d24" class="friendshipdd">Leo:</label>
+            <select id="d24" name="d24" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d25" class="friendshipdd">Lewis:</label>
+            <select id="d25" name="d25" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d26" class="friendshipdd">Linus:</label>
+            <select id="d26" name="d26" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d27" class="friendshipdd">Marnie:</label>
+            <select id="d27" name="d27" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d28" class="friendshipdd">Pam:</label>
+            <select id="d28" name="d28" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d29" class="friendshipdd">Pierre:</label>
+            <select id="d29" name="d29" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d30" class="friendshipdd">Robin:</label>
+            <select id="d30" name="d30" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d31" class="friendshipdd">Sandy:</label>
+            <select id="d31" name="d31" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d32" class="friendshipdd">Vincent:</label>
+            <select id="d32" name="d32" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d33" class="friendshipdd">Willy:</label>
+            <select id="d33" name="d33" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="d34" class="friendshipdd">Wizard:</label>
+            <select id="d34" name="d34" class="class5">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+          </div>
+
+          <div id="skills" class="tabcontent">
+            <label for="e1" class="friendshipdd">Farming:</label>
+            <select id="e1" name="e1" class="class6">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="e2" class="friendshipdd">Mining:</label>
+            <select id="e2" name="e2" class="class6">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="e3" class="friendshipdd">Foraging:</label>
+            <select id="e3" name="e3" class="class6">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="e4" class="friendshipdd">Fishing:</label>
+            <select id="e4" name="e4" class="class6">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+            <label for="e5" class="friendshipdd">Combat:</label>
+            <select id="e5" name="e5" class="class6">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select><br>
+
+          </div>
+
+          <div id="stardrops" class="tabcontent">
+            <input type="checkbox" id="f1" name="f1" class="checkbox" class="class7">
+            <label for="f1">Stardew Valley Fair</label><br>
+
+            <input type="checkbox" id="f2" name="f2" class="checkbox" class="class7">
+            <label for="f2">Mines Level 100</label><br>
+
+            <input type="checkbox" id="f3" name="f3" class="checkbox" class="class7">
+            <label for="f3">Spouse/Roomate</label><br>
+
+            <input type="checkbox" id="f4" name="f4" class="checkbox" class="class7">
+            <label for="f4">Krobus' Shop</label><br>
+
+            <input type="checkbox" id="f5" name="f5" class="checkbox" class="class7">
+            <label for="f5">Old Master Cannoli</label><br>
+
+            <input type="checkbox" id="f6" name="f6" class="checkbox" class="class7">
+            <label for="f6">Willy (Master Angler Achievement)</label><br>
+
+            <input type="checkbox" id="f7" name="f7" class="checkbox" class="class7">
+            <label for="f7">Gunther (Donating All Items to Museum)</label><br>
+
+          </div>
+
+          <div id="recipesCooked" class="tabcontent">
+            <input type="checkbox" id="g1" name="g1" class="checkbox" class="class8">
+            <label for="g1">Fried Egg</label><br>
+
+            <input type="checkbox" id="g2" name="g2" class="checkbox" class="class8">
+            <label for="g2">Omelet</label><br>
+
+            <input type="checkbox" id="g3" name="g3" class="checkbox" class="class8">
+            <label for="g3">Salad</label><br>
+
+            <input type="checkbox" id="g4" name="g4" class="checkbox" class="class8">
+            <label for="g4">Cheese Cauliflower</label><br>
+
+            <input type="checkbox" id="g5" name="g5" class="checkbox" class="class8">
+            <label for="g5">Baked Fish</label><br>
+
+            <input type="checkbox" id="g6" name="g6" class="checkbox" class="class8">
+            <label for="g6">Parsnip Soup</label><br>
+
+            <input type="checkbox" id="g7" name="g7" class="checkbox" class="class8">
+            <label for="g7">Vegetable Medley</label><br>
+
+            <input type="checkbox" id="g8" name="g8" class="checkbox" class="class8">
+            <label for="g8">Complete Breakfast</label><br>
+
+            <input type="checkbox" id="g9" name="g9" class="checkbox" class="class8">
+            <label for="g9">Fried Calamari</label><br>
+
+            <input type="checkbox" id="g10" name="g10" class="checkbox" class="class8">
+            <label for="g10">Strange Bun</label><br>
+
+            <input type="checkbox" id="g11" name="g11" class="checkbox" class="class8">
+            <label for="g11">Lucky Lunch</label><br>
+
+            <input type="checkbox" id="g12" name="g12" class="checkbox" class="class8">
+            <label for="g12">Fried Mushroom</label><br>
+
+            <input type="checkbox" id="g13" name="g13" class="checkbox" class="class8">
+            <label for="g13">Pizza</label><br>
+
+            <input type="checkbox" id="g14" name="g14" class="checkbox" class="class8">
+            <label for="g14">Bean Hotpot</label><br>
+
+            <input type="checkbox" id="g15" name="g15" class="checkbox" class="class8">
+            <label for="g15">Glazed Yams</label><br>
+
+            <input type="checkbox" id="g16" name="g16" class="checkbox" class="class8">
+            <label for="g16">Carp Surprise</label><br>
+
+            <input type="checkbox" id="g17" name="g17" class="checkbox" class="class8">
+            <label for="g17">Hashbrowns</label><br>
+
+            <input type="checkbox" id="g18" name="g18" class="checkbox" class="class8">
+            <label for="g18">Pancakes</label><br>
+
+            <input type="checkbox" id="g19" name="g19" class="checkbox" class="class8">
+            <label for="g19">Salmon Dinner</label><br>
+
+            <input type="checkbox" id="g20" name="g20" class="checkbox" class="class8">
+            <label for="g20">Fish Taco</label><br>
+
+            <input type="checkbox" id="g21" name="g21" class="checkbox" class="class8">
+            <label for="g21">Crispy Bass</label><br>
+
+            <input type="checkbox" id="g22" name="g22" class="checkbox" class="class8">
+            <label for="g22">Pepper Poppers</label><br>
+
+            <input type="checkbox" id="g23" name="g23" class="checkbox" class="class8">
+            <label for="g23">Bread</label><br>
+
+            <input type="checkbox" id="g24" name="g24" class="checkbox" class="class8">
+            <label for="g24">Tom Kha Soup</label><br>
+
+            <input type="checkbox" id="g25" name="g25" class="checkbox" class="class8">
+            <label for="g25">Trout Soup</label><br>
+
+            <input type="checkbox" id="g26" name="g26" class="checkbox" class="class8">
+            <label for="g26">Chocolate Cake</label><br>
+
+            <input type="checkbox" id="g27" name="g27" class="checkbox" class="class8">
+            <label for="g27">Pink Cake</label><br>
+
+            <input type="checkbox" id="g28" name="g28" class="checkbox" class="class8">
+            <label for="g28">Rhubarb Pie</label><br>
+
+            <input type="checkbox" id="g29" name="g29" class="checkbox" class="class8">
+            <label for="g29">Cookie</label><br>
+
+            <input type="checkbox" id="g30" name="g30" class="checkbox" class="class8">
+            <label for="g30">Spaghetti</label><br>
+
+            <input type="checkbox" id="g31" name="g31" class="checkbox" class="class8">
+            <label for="g31">Fried Eel</label><br>
+
+            <input type="checkbox" id="g32" name="g32" class="checkbox" class="class8">
+            <label for="g32">Spicy Eel</label><br>
+
+            <input type="checkbox" id="g33" name="g33" class="checkbox" class="class8">
+            <label for="g33">Sashimi</label><br>
+
+            <input type="checkbox" id="g34" name="g34" class="checkbox" class="class8">
+            <label for="g34">Maki Roll</label><br>
+
+            <input type="checkbox" id="g35" name="g35" class="checkbox" class="class8">
+            <label for="g35">Tortilla</label><br>
+
+            <input type="checkbox" id="g36" name="g36" class="checkbox" class="class8">
+            <label for="g36">Red Plate</label><br>
+
+            <input type="checkbox" id="g37" name="g37" class="checkbox" class="class8">
+            <label for="g37">Eggplant Parmesan</label><br>
+
+            <input type="checkbox" id="g38" name="g38" class="checkbox" class="class8">
+            <label for="g38">Rice Pudding</label><br>
+
+            <input type="checkbox" id="g39" name="g39" class="checkbox" class="class8">
+            <label for="g39">Ice Cream</label><br>
+
+            <input type="checkbox" id="g40" name="g40" class="checkbox" class="class8">
+            <label for="g40">Blueberry Tart</label><br>
+
+            <input type="checkbox" id="g41" name="g41" class="checkbox" class="class8">
+            <label for="g41">Autumn's Bounty</label><br>
+
+            <input type="checkbox" id="g42" name="g42" class="checkbox" class="class8">
+            <label for="g42">Pumpkin Soup</label><br>
+
+            <input type="checkbox" id="g43" name="g43" class="checkbox" class="class8">
+            <label for="g43">Super Meal</label><br>
+
+            <input type="checkbox" id="g44" name="g44" class="checkbox" class="class8">
+            <label for="g44">Cranberry Sauce</label><br>
+
+            <input type="checkbox" id="g45" name="g45" class="checkbox" class="class8">
+            <label for="g45">Stuffing</label><br>
+
+            <input type="checkbox" id="g46" name="g46" class="checkbox" class="class8">
+            <label for="g46">Farmer's Lunch</label><br>
+
+            <input type="checkbox" id="g47" name="g47" class="checkbox" class="class8">
+            <label for="g47">Survival Burger</label><br>
+
+            <input type="checkbox" id="g48" name="g48" class="checkbox" class="class8">
+            <label for="g48">Dish O' The Sea</label><br>
+
+            <input type="checkbox" id="g49" name="g49" class="checkbox" class="class8">
+            <label for="g49">Miner's Treat</label><br>
+
+            <input type="checkbox" id="g50" name="g50" class="checkbox" class="class8">
+            <label for="g50">Roots Platter</label><br>
+
+            <input type="checkbox" id="g51" name="g51" class="checkbox" class="class8">
+            <label for="g51">Triple Shot Espresso</label><br>
+
+            <input type="checkbox" id="g52" name="g52" class="checkbox" class="class8">
+            <label for="g52">Seafoam Pudding</label><br>
+
+            <input type="checkbox" id="g53" name="g53" class="checkbox" class="class8">
+            <label for="g53">Algae Soup</label><br>
+
+            <input type="checkbox" id="g54" name="g54" class="checkbox" class="class8">
+            <label for="g54">Pale Broth</label><br>
+
+            <input type="checkbox" id="g55" name="g55" class="checkbox" class="class8">
+            <label for="g55">Plum Pudding</label><br>
+
+            <input type="checkbox" id="g56" name="g56" class="checkbox" class="class8">
+            <label for="g56">Artichoke Dip</label><br>
+
+            <input type="checkbox" id="g57" name="g57" class="checkbox" class="class8">
+            <label for="g57">Stir Fry</label><br>
+
+            <input type="checkbox" id="g58" name="g58" class="checkbox" class="class8">
+            <label for="g58">Roasted Hazelnuts</label><br>
+
+            <input type="checkbox" id="g59" name="g59" class="checkbox" class="class8">
+            <label for="g59">Pumpkin Pie</label><br>
+
+            <input type="checkbox" id="g60" name="g60" class="checkbox" class="class8">
+            <label for="g60">Radish Salad</label><br>
+
+            <input type="checkbox" id="g61" name="g61" class="checkbox" class="class8">
+            <label for="g61">Fruit Salad</label><br>
+
+            <input type="checkbox" id="g62" name="g62" class="checkbox" class="class8">
+            <label for="g62">Blackberry Cobbler</label><br>
+
+            <input type="checkbox" id="g63" name="g63" class="checkbox" class="class8">
+            <label for="g63">Cranberry Candy</label><br>
+
+            <input type="checkbox" id="g64" name="g64" class="checkbox" class="class8">
+            <label for="g64">Bruschetta</label><br>
+
+            <input type="checkbox" id="g65" name="g65" class="checkbox" class="class8">
+            <label for="g65">Coleslaw</label><br>
+
+            <input type="checkbox" id="g66" name="g66" class="checkbox" class="class8">
+            <label for="g66">Fiddlehead Risotto</label><br>
+
+            <input type="checkbox" id="g67" name="g67" class="checkbox" class="class8">
+            <label for="g67">Poppyseed Muffin</label><br>
+
+            <input type="checkbox" id="g68" name="g68" class="checkbox" class="class8">
+            <label for="g68">Chowder</label><br>
+
+            <input type="checkbox" id="g69" name="g69" class="checkbox" class="class8">
+            <label for="g69">Fish Stew</label><br>
+
+            <input type="checkbox" id="g70" name="g70" class="checkbox" class="class8">
+            <label for="g70">Escargot</label><br>
+
+            <input type="checkbox" id="g71" name="g71" class="checkbox" class="class8">
+            <label for="g71">Lobster Bisque</label><br>
+
+            <input type="checkbox" id="g72" name="g72" class="checkbox" class="class8">
+            <label for="g72">Maple Bar</label><br>
+
+            <input type="checkbox" id="g73" name="g73" class="checkbox" class="class8">
+            <label for="g73">Crab Cakes</label><br>
+
+            <input type="checkbox" id="g74" name="g74" class="checkbox" class="class8">
+            <label for="g74">Shrimp Cocktail</label><br>
+
+            <input type="checkbox" id="g75" name="g75" class="checkbox" class="class8">
+            <label for="g75">Ginger Ale</label><br>
+
+            <input type="checkbox" id="g76" name="g76" class="checkbox" class="class8">
+            <label for="g76">Banana Pudding</label><br>
+
+            <input type="checkbox" id="g77" name="g77" class="checkbox" class="class8">
+            <label for="g77">Mango Sticky Rice</label><br>
+
+            <input type="checkbox" id="g78" name="g78" class="checkbox" class="class8">
+            <label for="g78">Poi</label><br>
+
+            <input type="checkbox" id="g79" name="g79" class="checkbox" class="class8">
+            <label for="g79">Tropical Curry</label><br>
+
+            <input type="checkbox" id="g80" name="g80" class="checkbox" class="class8">
+            <label for="g80">Squid Ink Ravioli</label><br>
+
+
+          </div>
+
+          <div id="recipesCrafted" class="tabcontent">
+            <input type="checkbox" id="h1" name="h1" class="checkbox" class="class9">
+            <label for="h1">Cherry Bomb</label><br>
+
+            <input type="checkbox" id="h2" name="h2" class="checkbox" class="class9">
+            <label for="h2">Bomb</label><br>
+
+            <input type="checkbox" id="h3" name="h3" class="checkbox" class="class9">
+            <label for="h3">Mega Bomb</label><br>
+
+            <input type="checkbox" id="h4" name="h4" class="checkbox" class="class9">
+            <label for="h4">Gate</label><br>
+
+            <input type="checkbox" id="h5" name="h5" class="checkbox" class="class9">
+            <label for="h5">Wood Fence</label><br>
+
+            <input type="checkbox" id="h6" name="h6" class="checkbox" class="class9">
+            <label for="h6">Stone Fence</label><br>
+
+            <input type="checkbox" id="h7" name="h7" class="checkbox" class="class9">
+            <label for="h7">Iron Fence (10)</label><br>
+
+            <input type="checkbox" id="h8" name="h8" class="checkbox" class="class9">
+            <label for="h8">Hardwood Fence</label><br>
+
+            <input type="checkbox" id="h9" name="h9" class="checkbox" class="class9">
+            <label for="h9">Sprinkler</label><br>
+
+            <input type="checkbox" id="h10" name="h10" class="checkbox" class="class9">
+            <label for="h10">Quality Sprinkler</label><br>
+
+            <input type="checkbox" id="h11" name="h11" class="checkbox" class="class9">
+            <label for="h11">Iridium Sprinkler</label><br>
+
+            <input type="checkbox" id="h12" name="h12" class="checkbox" class="class9">
+            <label for="h12">Mayonnaise Machine</label><br>
+
+            <input type="checkbox" id="h13" name="h13" class="checkbox" class="class9">
+            <label for="h13">Bee House</label><br>
+
+            <input type="checkbox" id="h14" name="h14" class="checkbox" class="class9">
+            <label for="h14">Preserves Jar</label><br>
+
+            <input type="checkbox" id="h15" name="h15" class="checkbox" class="class9">
+            <label for="h15">Cheese Press</label><br>
+
+            <input type="checkbox" id="h16" name="h16" class="checkbox" class="class9">
+            <label for="h16">Loom</label><br>
+
+            <input type="checkbox" id="h17" name="h17" class="checkbox" class="class9">
+            <label for="h17">Keg</label><br>
+
+            <input type="checkbox" id="h18" name="h18" class="checkbox" class="class9">
+            <label for="h18">Oil Maker</label><br>
+
+            <input type="checkbox" id="h19" name="h19" class="checkbox" class="class9">
+            <label for="h19">Cask</label><br>
+
+            <input type="checkbox" id="h20" name="h20" class="checkbox" class="class9">
+            <label for="h20">Basic Fertilizer</label><br>
+
+            <input type="checkbox" id="h21" name="h21" class="checkbox" class="class9">
+            <label for="h21">Quality Fertilizer</label><br>
+
+            <input type="checkbox" id="h22" name="h22" class="checkbox" class="class9">
+            <label for="h22">Deluxe Fertilizer (5)</label><br>
+
+            <input type="checkbox" id="h23" name="h23" class="checkbox" class="class9">
+            <label for="h23">Speed-Gro (5)</label><br>
+
+            <input type="checkbox" id="h24" name="h24" class="checkbox" class="class9">
+            <label for="h24">Deluxe Speed-Gro (5)</label><br>
+
+            <input type="checkbox" id="h25" name="h25" class="checkbox" class="class9">
+            <label for="h25">Hyper Speed-Gro</label><br>
+
+            <input type="checkbox" id="h26" name="h26" class="checkbox" class="class9">
+            <label for="h26">Basic Retaining Soil</label><br>
+
+            <input type="checkbox" id="h27" name="h27" class="checkbox" class="class9">
+            <label for="h27">Quality Retaining Soil (2)</label><br>
+
+            <input type="checkbox" id="h28" name="h28" class="checkbox" class="class9">
+            <label for="h28">Deluxe Retaining Soil</label><br>
+
+            <input type="checkbox" id="h29" name="h29" class="checkbox" class="class9">
+            <label for="h29">Tree Fertilizer</label><br>
+
+            <input type="checkbox" id="h30" name="h30" class="checkbox" class="class9">
+            <label for="h30">Wild Seeds (Spring Seeds)</label><br>
+
+            <input type="checkbox" id="h31" name="h31" class="checkbox" class="class9">
+            <label for="h31">Wild Seeds (Summer Seeds)</label><br>
+
+            <input type="checkbox" id="h32" name="h32" class="checkbox" class="class9">
+            <label for="h32">Wild Seeds (Fall Seeds)</label><br>
+
+            <input type="checkbox" id="h33" name="h33" class="checkbox" class="class9">
+            <label for="h33">Wild Seeds (Winter Seeds)</label><br>
+
+            <input type="checkbox" id="h34" name="h34" class="checkbox" class="class9">
+            <label for="h34">Ancient Seeds</label><br>
+
+            <input type="checkbox" id="h35" name="h35" class="checkbox" class="class9">
+            <label for="h35">Grass Starter</label><br>
+
+            <input type="checkbox" id="h36" name="h36" class="checkbox" class="class9">
+            <label for="h36">Tea Sapling</label><br>
+
+            <input type="checkbox" id="h37" name="h37" class="checkbox" class="class9">
+            <label for="h37">Fiber Seeds (4)</label><br>
+
+            <input type="checkbox" id="h38" name="h38" class="checkbox" class="class9">
+            <label for="h38">Wood Floor</label><br>
+
+            <input type="checkbox" id="h39" name="h39" class="checkbox" class="class9">
+            <label for="h39">Rustic Plank Floor</label><br>
+
+            <input type="checkbox" id="h40" name="h40" class="checkbox" class="class9">
+            <label for="h40">Straw Floor</label><br>
+
+            <input type="checkbox" id="h41" name="h41" class="checkbox" class="class9">
+            <label for="h41">Weathered Floor</label><br>
+
+            <input type="checkbox" id="h42" name="h42" class="checkbox" class="class9">
+            <label for="h42">Crystal Floor (5)</label><br>
+
+            <input type="checkbox" id="h43" name="h43" class="checkbox" class="class9">
+            <label for="h43">Stone Floor</label><br>
+
+            <input type="checkbox" id="h44" name="h44" class="checkbox" class="class9">
+            <label for="h44">Stone Walkway Floor</label><br>
+
+            <input type="checkbox" id="h45" name="h45" class="checkbox" class="class9">
+            <label for="h45">Brick Floor (5)</label><br>
+
+            <input type="checkbox" id="h46" name="h46" class="checkbox" class="class9">
+            <label for="h46">Wood Path</label><br>
+
+            <input type="checkbox" id="h47" name="h47" class="checkbox" class="class9">
+            <label for="h47">Gravel Path</label><br>
+
+            <input type="checkbox" id="h48" name="h48" class="checkbox" class="class9">
+            <label for="h48">Cobblestone Path</label><br>
+
+            <input type="checkbox" id="h49" name="h49" class="checkbox" class="class9">
+            <label for="h49">Stepping Stone Path</label><br>
+
+            <input type="checkbox" id="h50" name="h50" class="checkbox" class="class9">
+            <label for="h50">Crystal Path (5)</label><br>
+
+            <input type="checkbox" id="h51" name="h51" class="checkbox" class="class9">
+            <label for="h51">Spinner</label><br>
+
+            <input type="checkbox" id="h52" name="h52" class="checkbox" class="class9">
+            <label for="h52">Trap Bobber</label><br>
+
+            <input type="checkbox" id="h53" name="h53" class="checkbox" class="class9">
+            <label for="h53">Cork Bobber</label><br>
+
+            <input type="checkbox" id="h54" name="h54" class="checkbox" class="class9">
+            <label for="h54">Quality Bobber</label><br>
+
+            <input type="checkbox" id="h55" name="h55" class="checkbox" class="class9">
+            <label for="h55">Treasure Hunter</label><br>
+
+            <input type="checkbox" id="h56" name="h56" class="checkbox" class="class9">
+            <label for="h56">Dressed Spinner</label><br>
+
+            <input type="checkbox" id="h57" name="h57" class="checkbox" class="class9">
+            <label for="h57">Barbed Hook</label><br>
+
+            <input type="checkbox" id="h58" name="h58" class="checkbox" class="class9">
+            <label for="h58">Magnet (3)</label><br>
+
+            <input type="checkbox" id="h59" name="h59" class="checkbox" class="class9">
+            <label for="h59">Bait (5)</label><br>
+
+            <input type="checkbox" id="h60" name="h60" class="checkbox" class="class9">
+            <label for="h60">Wild Bait (5)</label><br>
+
+            <input type="checkbox" id="h61" name="h61" class="checkbox" class="class9">
+            <label for="h61">Magic Bait (5)</label><br>
+
+            <input type="checkbox" id="h62" name="h62" class="checkbox" class="class9">
+            <label for="h62">Crab Pot</label><br>
+
+            <input type="checkbox" id="h63" name="h63" class="checkbox" class="class9">
+            <label for="h63">Sturdy Ring</label><br>
+
+            <input type="checkbox" id="h64" name="h64" class="checkbox" class="class9">
+            <label for="h64">Warrior Ring</label><br>
+
+            <input type="checkbox" id="h65" name="h65" class="checkbox" class="class9">
+            <label for="h65">Ring of Yoba</label><br>
+
+            <input type="checkbox" id="h66" name="h66" class="checkbox" class="class9">
+            <label for="h66">Thorns Ring</label><br>
+
+            <input type="checkbox" id="h67" name="h67" class="checkbox" class="class9">
+            <label for="h67">Glowstone Ring</label><br>
+
+            <input type="checkbox" id="h68" name="h68" class="checkbox" class="class9">
+            <label for="h68">Iridium Band</label><br>
+
+            <input type="checkbox" id="h70" name="h70" class="checkbox" class="class9">
+            <label for="h70">Field Snack</label><br>
+
+            <input type="checkbox" id="h71" name="h71" class="checkbox" class="class9">
+            <label for="h71">Bug Steak</label><br>
+
+            <input type="checkbox" id="h72" name="h72" class="checkbox" class="class9">
+            <label for="h72">Life Elixir</label><br>
+
+            <input type="checkbox" id="h73" name="h73" class="checkbox" class="class9">
+            <label for="h73">Oil of Garlic</label><br>
+
+            <input type="checkbox" id="h74" name="h74" class="checkbox" class="class9">
+            <label for="h74">Monster Musk</label><br>
+
+            <input type="checkbox" id="h75" name="h75" class="checkbox" class="class9">
+            <label for="h75">Fairy Dust</label><br>
+
+            <input type="checkbox" id="h76" name="h76" class="checkbox" class="class9">
+            <label for="h76">Warp Totem: Beach</label><br>
+
+            <input type="checkbox" id="h77" name="h77" class="checkbox" class="class9">
+            <label for="h77">Warp Totem: Mountains</label><br>
+
+            <input type="checkbox" id="h78" name="h78" class="checkbox" class="class9">
+            <label for="h78">Warp Totem: Farm</label><br>
+
+            <input type="checkbox" id="h79" name="h79" class="checkbox" class="class9">
+            <label for="h79">Warp Totem: Desert</label><br>
+
+            <input type="checkbox" id="h80" name="h80" class="checkbox" class="class9">
+            <label for="h80">Warp Totem: Island</label><br>
+
+            <input type="checkbox" id="h81" name="h81" class="checkbox" class="class9">
+            <label for="h81">Rain Totem</label><br>
+
+            <input type="checkbox" id="h82" name="h82" class="checkbox" class="class9">
+            <label for="h82">Torch</label><br>
+
+            <input type="checkbox" id="h83" name="h83" class="checkbox" class="class9">
+            <label for="h83">Campfire</label><br>
+
+            <input type="checkbox" id="h84" name="h84" class="checkbox" class="class9">
+            <label for="h84">Wooden Brazier</label><br>
+
+            <input type="checkbox" id="h85" name="h85" class="checkbox" class="class9">
+            <label for="h85">Stone Brazier</label><br>
+
+            <input type="checkbox" id="h86" name="h86" class="checkbox" class="class9">
+            <label for="h86">Gold Brazier</label><br>
+
+            <input type="checkbox" id="h87" name="h87" class="checkbox" class="class9">
+            <label for="h87">Carved Brazier</label><br>
+
+            <input type="checkbox" id="h88" name="h88" class="checkbox" class="class9">
+            <label for="h88">Stump Brazier</label><br>
+
+            <input type="checkbox" id="h89" name="h89" class="checkbox" class="class9">
+            <label for="h89">Barrel Brazier</label><br>
+
+            <input type="checkbox" id="h90" name="h90" class="checkbox" class="class9">
+            <label for="h90">Skull Brazier</label><br>
+
+            <input type="checkbox" id="h91" name="h91" class="checkbox" class="class9">
+            <label for="h91">Marble Brazier</label><br>
+
+            <input type="checkbox" id="h92" name="h92" class="checkbox" class="class9">
+            <label for="h92">Wood Lamp-post</label><br>
+
+            <input type="checkbox" id="h93" name="h93" class="checkbox" class="class9">
+            <label for="h93">Iron Lamp-post</label><br>
+
+            <input type="checkbox" id="h94" name="h94" class="checkbox" class="class9">
+            <label for="h94">Jack-O-Lantern</label><br>
+
+            <input type="checkbox" id="h95" name="h95" class="checkbox" class="class9">
+            <label for="h95">Charcoal Kiln</label><br>
+
+            <input type="checkbox" id="h96" name="h96" class="checkbox" class="class9">
+            <label for="h96">Crystalarium</label><br>
+
+            <input type="checkbox" id="h97" name="h97" class="checkbox" class="class9">
+            <label for="h97">Furnace</label><br>
+
+            <input type="checkbox" id="h98" name="h98" class="checkbox" class="class9">
+            <label for="h98">Lightning Rod</label><br>
+
+            <input type="checkbox" id="h99" name="h99" class="checkbox" class="class9">
+            <label for="h99">Solar Panel</label><br>
+
+            <input type="checkbox" id="h100" name="h100" class="checkbox" class="class9">
+            <label for="h100">Recycling Machine</label><br>
+
+            <input type="checkbox" id="h101" name="h101" class="checkbox" class="class9">
+            <label for="h101">Seed Maker</label><br>
+
+            <input type="checkbox" id="h102" name="h102" class="checkbox" class="class9">
+            <label for="h102">Slime Incubator</label><br>
+
+            <input type="checkbox" id="h103" name="h103" class="checkbox" class="class9">
+            <label for="h103">Ostrich Incubator</label><br>
+
+            <input type="checkbox" id="h104" name="h104" class="checkbox" class="class9">
+            <label for="h104">Slime Egg-Press</label><br>
+
+            <input type="checkbox" id="h105" name="h105" class="checkbox" class="class9">
+            <label for="h105">Tapper</label><br>
+
+            <input type="checkbox" id="h106" name="h106" class="checkbox" class="class9">
+            <label for="h106">Heavy Tapper</label><br>
+
+            <input type="checkbox" id="h107" name="h107" class="checkbox" class="class9">
+            <label for="h107">Worm Bin</label><br>
+
+            <input type="checkbox" id="h108" name="h108" class="checkbox" class="class9">
+            <label for="h108">Bone Mill</label><br>
+
+            <input type="checkbox" id="h109" name="h109" class="checkbox" class="class9">
+            <label for="h109">Geode Crusher</label><br>
+
+            <input type="checkbox" id="h110" name="h110" class="checkbox" class="class9">
+            <label for="h110">Tub o' Flowers</label><br>
+
+            <input type="checkbox" id="h111" name="h111" class="checkbox" class="class9">
+            <label for="h111">Wicked Statue</label><br>
+
+            <input type="checkbox" id="h112" name="h112" class="checkbox" class="class9">
+            <label for="h112">Flute Block</label><br>
+
+            <input type="checkbox" id="h113" name="h113" class="checkbox" class="class9">
+            <label for="h113">Drum Block</label><br>
+
+            <input type="checkbox" id="h114" name="h114" class="checkbox" class="class9">
+            <label for="h114">Chest</label><br>
+
+            <input type="checkbox" id="h115" name="h115" class="checkbox" class="class9">
+            <label for="h115">Stone Chest</label><br>
+
+            <input type="checkbox" id="h116" name="h116" class="checkbox" class="class9">
+            <label for="h116">Wood Sign</label><br>
+
+            <input type="checkbox" id="h117" name="h117" class="checkbox" class="class9">
+            <label for="h117">Stone Sign</label><br>
+
+            <input type="checkbox" id="h118" name="h118" class="checkbox" class="class9">
+            <label for="h118">Dark Sign</label><br>
+
+            <input type="checkbox" id="h119" name="h119" class="checkbox" class="class9">
+            <label for="h119">Garden Pot</label><br>
+
+            <input type="checkbox" id="h120" name="h120" class="checkbox" class="class9">
+            <label for="h120">Scarecrow</label><br>
+
+            <input type="checkbox" id="h121" name="h121" class="checkbox" class="class9">
+            <label for="h121">Deluxe Scarecrow</label><br>
+
+            <input type="checkbox" id="h122" name="h122" class="checkbox" class="class9">
+            <label for="h122">Staircase</label><br>
+
+            <input type="checkbox" id="h123" name="h123" class="checkbox" class="class9">
+            <label for="h123">Explosive Ammo (5)</label><br>
+
+            <input type="checkbox" id="h124" name="h124" class="checkbox" class="class9">
+            <label for="h124">Transmute (Fe)</label><br>
+
+            <input type="checkbox" id="h125" name="h125" class="checkbox" class="class9">
+            <label for="h125">Transmute (Au)</label><br>
+
+            <input type="checkbox" id="h126" name="h126" class="checkbox" class="class9">
+            <label for="h126">Mini-Jukebox</label><br>
+
+            <input type="checkbox" id="h127" name="h127" class="checkbox" class="class9">
+            <label for="h127">Mini-Obelisk</label><br>
+
+            <input type="checkbox" id="h128" name="h128" class="checkbox" class="class9">
+            <label for="h128">Farm Computer</label><br>
+
+            <input type="checkbox" id="h129" name="h129" class="checkbox" class="class9">
+            <label for="h129">Hopper</label><br>
+
+            <input type="checkbox" id="h130" name="h130" class="checkbox" class="class9">
+            <label for="h130">Cookout Kit</label><br>
+
+            <input type="checkbox" id="h69" name="h69" class="checkbox" class="class9">
+            <label for="h69">Wedding Ring</label><br>
+
+          </div>
+
+          <div id="fish" class="tabcontent">
+            <input type="checkbox" id="i1" name="i1" class="checkbox" class="class10">
+            <label for="i1">Pufferfish</label><br>
+
+            <input type="checkbox" id="i2" name="i2" class="checkbox" class="class10">
+            <label for="i2">Anchovy</label><br>
+
+            <input type="checkbox" id="i3" name="i3" class="checkbox" class="class10">
+            <label for="i3">Tuna</label><br>
+
+            <input type="checkbox" id="i4" name="i4" class="checkbox" class="class10">
+            <label for="i4">Sardine</label><br>
+
+            <input type="checkbox" id="i5" name="i5" class="checkbox" class="class10">
+            <label for="i5">Bream</label><br>
+
+            <input type="checkbox" id="i6" name="i6" class="checkbox" class="class10">
+            <label for="i6">Largemouth Bass</label><br>
+
+            <input type="checkbox" id="i7" name="i7" class="checkbox" class="class10">
+            <label for="i7">Smallmouth Bass</label><br>
+
+            <input type="checkbox" id="i8" name="i8" class="checkbox" class="class10">
+            <label for="i8">Rainbow Trout</label><br>
+
+            <input type="checkbox" id="i9" name="i9" class="checkbox" class="class10">
+            <label for="i9">Salmon</label><br>
+
+            <input type="checkbox" id="i10" name="i10" class="checkbox" class="class10">
+            <label for="i10">Walleye</label><br>
+
+            <input type="checkbox" id="i11" name="i11" class="checkbox" class="class10">
+            <label for="i11">Perch</label><br>
+
+            <input type="checkbox" id="i12" name="i12" class="checkbox" class="class10">
+            <label for="i12">Carp</label><br>
+
+            <input type="checkbox" id="i13" name="i13" class="checkbox" class="class10">
+            <label for="i13">Catfish</label><br>
+
+            <input type="checkbox" id="i14" name="i14" class="checkbox" class="class10">
+            <label for="i14">Pike</label><br>
+
+            <input type="checkbox" id="i15" name="i15" class="checkbox" class="class10">
+            <label for="i15">Sunfish</label><br>
+
+            <input type="checkbox" id="i16" name="i16" class="checkbox" class="class10">
+            <label for="i16">Red Mullet</label><br>
+
+            <input type="checkbox" id="i17" name="i17" class="checkbox" class="class10">
+            <label for="i17">Herring</label><br>
+
+            <input type="checkbox" id="i18" name="i18" class="checkbox" class="class10">
+            <label for="i18">Eel</label><br>
+
+            <input type="checkbox" id="i19" name="i19" class="checkbox" class="class10">
+            <label for="i19">Octopus</label><br>
+
+            <input type="checkbox" id="i20" name="i20" class="checkbox" class="class10">
+            <label for="i20">Red Snapper</label><br>
+
+            <input type="checkbox" id="i21" name="i21" class="checkbox" class="class10">
+            <label for="i21">Squid</label><br>
+
+            <input type="checkbox" id="i22" name="i22" class="checkbox" class="class10">
+            <label for="i22">Seaweed</label><br>
+
+            <input type="checkbox" id="i23" name="i23" class="checkbox" class="class10">
+            <label for="i23">Green Algae</label><br>
+
+            <input type="checkbox" id="i24" name="i24" class="checkbox" class="class10">
+            <label for="i24">Sea Cucumber</label><br>
+
+            <input type="checkbox" id="i25" name="i25" class="checkbox" class="class10">
+            <label for="i25">Super Cucumber</label><br>
+
+            <input type="checkbox" id="i26" name="i26" class="checkbox" class="class10">
+            <label for="i26">Ghostfish</label><br>
+
+            <input type="checkbox" id="i27" name="i27" class="checkbox" class="class10">
+            <label for="i27">White Algae</label><br>
+
+            <input type="checkbox" id="i28" name="i28" class="checkbox" class="class10">
+            <label for="i28">Stonefish</label><br>
+
+            <input type="checkbox" id="i29" name="i29" class="checkbox" class="class10">
+            <label for="i29">Crimsonfish</label><br>
+
+            <input type="checkbox" id="i30" name="i30" class="checkbox" class="class10">
+            <label for="i30">Angler</label><br>
+
+            <input type="checkbox" id="i31" name="i31" class="checkbox" class="class10">
+            <label for="i31">Ice Pip</label><br>
+
+            <input type="checkbox" id="i32" name="i32" class="checkbox" class="class10">
+            <label for="i32">Lava Eel</label><br>
+
+            <input type="checkbox" id="i33" name="i33" class="checkbox" class="class10">
+            <label for="i33">Legend</label><br>
+
+            <input type="checkbox" id="i34" name="i34" class="checkbox" class="class10">
+            <label for="i34">Sandfish</label><br>
+
+            <input type="checkbox" id="i35" name="i35" class="checkbox" class="class10">
+            <label for="i35">Scorpion Carp</label><br>
+
+            <input type="checkbox" id="i36" name="i36" class="checkbox" class="class10">
+            <label for="i36">Flounder</label><br>
+
+            <input type="checkbox" id="i37" name="i37" class="checkbox" class="class10">
+            <label for="i37">Midnight Carp</label><br>
+
+            <input type="checkbox" id="i38" name="i38" class="checkbox" class="class10">
+            <label for="i38">Mutant Carp</label><br>
+
+            <input type="checkbox" id="i39" name="i39" class="checkbox" class="class10">
+            <label for="i39">Sturgeon</label><br>
+
+            <input type="checkbox" id="i40" name="i40" class="checkbox" class="class10">
+            <label for="i40">Tiger Trout</label><br>
+
+            <input type="checkbox" id="i41" name="i41" class="checkbox" class="class10">
+            <label for="i41">Bullhead</label><br>
+
+            <input type="checkbox" id="i42" name="i42" class="checkbox" class="class10">
+            <label for="i42">Tilapia</label><br>
+
+            <input type="checkbox" id="i43" name="i43" class="checkbox" class="class10">
+            <label for="i43">Chub</label><br>
+
+            <input type="checkbox" id="i44" name="i44" class="checkbox" class="class10">
+            <label for="i44">Dorado</label><br>
+
+            <input type="checkbox" id="i45" name="i45" class="checkbox" class="class10">
+            <label for="i45">Albacore</label><br>
+
+            <input type="checkbox" id="i46" name="i46" class="checkbox" class="class10">
+            <label for="i46">Shad</label><br>
+
+            <input type="checkbox" id="i47" name="i47" class="checkbox" class="class10">
+            <label for="i47">Lingcod</label><br>
+
+            <input type="checkbox" id="i48" name="i48" class="checkbox" class="class10">
+            <label for="i48">Halibut</label><br>
+
+            <input type="checkbox" id="i49" name="i49" class="checkbox" class="class10">
+            <label for="i49">Lobster</label><br>
+
+            <input type="checkbox" id="i50" name="i50" class="checkbox" class="class10">
+            <label for="i50">Crayfish</label><br>
+
+            <input type="checkbox" id="i51" name="i51" class="checkbox" class="class10">
+            <label for="i51">Crab</label><br>
+
+            <input type="checkbox" id="i52" name="i52" class="checkbox" class="class10">
+            <label for="i52">Cockle</label><br>
+
+            <input type="checkbox" id="i53" name="i53" class="checkbox" class="class10">
+            <label for="i53">Mussel</label><br>
+
+            <input type="checkbox" id="i54" name="i54" class="checkbox" class="class10">
+            <label for="i54">Shrimp</label><br>
+
+            <input type="checkbox" id="i55" name="i55" class="checkbox" class="class10">
+            <label for="i55">Snail</label><br>
+
+            <input type="checkbox" id="i56" name="i56" class="checkbox" class="class10">
+            <label for="i56">Periwinkle</label><br>
+
+            <input type="checkbox" id="i57" name="i57" class="checkbox" class="class10">
+            <label for="i57">Oyster</label><br>
+
+            <input type="checkbox" id="i58" name="i58" class="checkbox" class="class10">
+            <label for="i58">Woodskip</label><br>
+
+            <input type="checkbox" id="i59" name="i59" class="checkbox" class="class10">
+            <label for="i59">Glacierfish</label><br>
+
+            <input type="checkbox" id="i60" name="i60" class="checkbox" class="class10">
+            <label for="i60">Void Salmon</label><br>
+
+            <input type="checkbox" id="i61" name="i61" class="checkbox" class="class10">
+            <label for="i61">Slimejack</label><br>
+
+            <input type="checkbox" id="i62" name="i62" class="checkbox" class="class10">
+            <label for="i62">Midnight Squid</label><br>
+
+            <input type="checkbox" id="i63" name="i63" class="checkbox" class="class10">
+            <label for="i63">Spook Fish</label><br>
+
+            <input type="checkbox" id="i64" name="i64" class="checkbox" class="class10">
+            <label for="i64">Blobfish</label><br>
+
+            <input type="checkbox" id="i65" name="i65" class="checkbox" class="class10">
+            <label for="i65">Stingray</label><br>
+
+            <input type="checkbox" id="i66" name="i66" class="checkbox" class="class10">
+            <label for="i66">Lionfish</label><br>
+
+            <input type="checkbox" id="i67" name="i67" class="checkbox" class="class10">
+            <label for="i67">Blue Discus</label><br>
+
+
+          </div>
+
+          <div id="walnuts" class="tabcontent">
+            <label for="j1">Golden Walnuts:</label>
+            <input type="number" id="j1" name="j1" min="0" max="130" oninput="validateNumber(this)" class="class11">
+
+          </div>
+
+        </div>
+
+      </main>
+      <script src="script.js"></script>
+    </body>
+  </html>
