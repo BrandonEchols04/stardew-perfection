@@ -109,7 +109,7 @@ p{
 /* Style the buttons that are used to open the tab content */
 .tab button {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: inherit;
   border: none;
   outline: none;
