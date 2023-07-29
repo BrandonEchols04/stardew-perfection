@@ -250,7 +250,7 @@ inputFieldClass11 = 0;
 
 */
 
-
+var itemsShippedPCT, buildingsSubPCT, goldClockSubPCT, buildingsPCT, monsterEradicationPCT, friendshipPCT, skillsPCT, stardropsPCT, recipesCookedPCT, recipesCraftedPCT, fishPCT, walnutsPCT;
 
 console.log("There are " + recipesCraftedTotal + " obtainable recipes with the current configuration.");
 
