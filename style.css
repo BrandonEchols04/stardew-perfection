@@ -96,8 +96,9 @@ p{
   color: white;
 }
 
-/* Style the tab */
 .tab {
+  display: flex;
+  justify-content: center;
   overflow: hidden;
   border: 1px solid #3B3B3B;
   background-color: #393939;
@@ -106,10 +107,7 @@ p{
   color: #FFFFFF;
 }
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
-  display: flex;
-  /* justify-content: center; */
   background-color: inherit;
   border: none;
   outline: none;
@@ -121,7 +119,6 @@ p{
   color: #FFFFFF;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
   background-color: #444444;
   font-family: sv;
@@ -129,7 +126,6 @@ p{
   color: #FFFFFF;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
   background-color: #999999;
   font-family: sv;
@@ -137,7 +133,6 @@ p{
   color: #FFFFFF;
 }
 
-/* Style the tab content */
 .tabcontent {
   display: flex;
   padding: 6px 12px;
@@ -147,6 +142,7 @@ p{
   font-size: 0.9em;
   color: #FFFFFF;
 }
+
 
 .friendshipdd {
     display: inline-block;
