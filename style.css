@@ -108,8 +108,9 @@ p{
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
+  display: flex;
+  justify-content: center;
   background-color: inherit;
-  float: left;
   border: none;
   outline: none;
   cursor: pointer;
