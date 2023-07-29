@@ -138,7 +138,7 @@ p{
 
 /* Style the tab content */
 .tabcontent {
-  display: none;
+  display: flex;
   padding: 6px 12px;
   border: 1px solid #3B3B3B;
   border-top: none;
