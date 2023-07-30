@@ -6,6 +6,21 @@
 
 }
 
+#containerFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #EBEBEB;
+  margin: auto;
+}
+
+#footer{
+  font-family: sv;
+  color: #EBEBEB;
+  text-align: center;
+  margin: auto;
+}
+
 body{
   background-color: #333333;
   font-family: sv;
