@@ -17,17 +17,17 @@
 
         <div id="containerTop" class="aContainer">
 
-          <h1 class="overall">Overall: 0%</h1>
-          <h3 class="per">Items Shipped: 0%</h3>
-          <h3 class="per">Farm Buildings Built: 0%</h3>
-          <h3 class="per">Monster Eradication Goals Completed: 0%</h3>
-          <h3 class="per">Villager Friendship Levels Maxed: 0%</h3>
-          <h3 class="per">Skill Levels Aquired: 0%</h3>
-          <h3 class="per">Stardrops Aquired: 0%</h3>
-          <h3 class="per">Recipes Cooked: 0%</h3>
-          <h3 class="per">Recipes Crafted: 0%</h3>
-          <h3 class="per">Fish Caught: 0%</h3>
-          <h3 class="per">Golden Walnuts Found: 0%</h3>
+    <h1 id="overall" class="overall">Overall: 0%</h1>
+    <h3 id="itemsShipped" class="per">Items Shipped: 0%</h3>
+    <h3 id="buildingsBuilt" class="per">Farm Buildings Built: 0%</h3>
+    <h3 id="monsterEradication" class="per">Monster Eradication Goals Completed: 0%</h3>
+    <h3 id="friendship" class="per">Villager Friendship Levels Maxed: 0%</h3>
+    <h3 id="skills" class="per">Skill Levels Aquired: 0%</h3>
+    <h3 id="stardrops" class="per">Stardrops Aquired: 0%</h3>
+    <h3 id="recipesCooked" class="per">Recipes Cooked: 0%</h3>
+    <h3 id="recipesCrafted" class="per">Recipes Crafted: 0%</h3>
+    <h3 id="fish" class="per">Fish Caught: 0%</h3>
+    <h3 id="walnuts" class="per">Golden Walnuts Found: 0%</h3>
 
         </div>
 
@@ -54,7 +54,7 @@
           </div>
 
           <!-- Tab content -->
-          <div id="itemsShipped" class="tabcontent">
+          <div id="itemsShippedContent" class="tabcontent">
             <input type="checkbox" id="a1" name="a1" class="checkbox class1">
             <label for="a1">Wild Horseradish</label><br>
 
@@ -492,7 +492,7 @@
 
           </div>
 
-          <div id="buildings" class="tabcontent">
+          <div id="buildingsContent" class="tabcontent">
             <input type="checkbox" id="b1" name="b1" class="checkbox class2">
             <label for="b1">Earth Obelisk</label><br>
 
@@ -510,7 +510,7 @@
 
           </div>
 
-          <div id="monsterEradication" class="tabcontent">
+          <div id="monsterEradicationContent" class="tabcontent">
             <input type="checkbox" id="c1" name="c1" class="checkbox class4">
             <label for="c1">1000 Slimes</label><br>
 
@@ -549,7 +549,7 @@
 
           </div>
 
-          <div id="friendship" class="tabcontent">
+          <div id="friendshipContent" class="tabcontent">
             <label for="d1" class="friendshipdd">Alex:</label>
             <select id="d1" name="d1" class="class5">
               <option value="0">0</option>
@@ -1038,7 +1038,7 @@
 
           </div>
 
-          <div id="skills" class="tabcontent">
+          <div id="skillsContent" class="tabcontent">
             <label for="e1" class="friendshipdd">Farming:</label>
             <select id="e1" name="e1" class="class6">
               <option value="0">0</option>
@@ -1116,7 +1116,7 @@
 
           </div>
 
-          <div id="stardrops" class="tabcontent">
+          <div id="stardropsContent" class="tabcontent">
             <input type="checkbox" id="f1" name="f1" class="checkbox class7">
             <label for="f1">Stardew Valley Fair</label><br>
 
@@ -1140,7 +1140,7 @@
 
           </div>
 
-          <div id="recipesCooked" class="tabcontent">
+          <div id="recipesCookedContent" class="tabcontent">
             <input type="checkbox" id="g1" name="g1" class="checkbox class8">
             <label for="g1">Fried Egg</label><br>
 
@@ -1384,7 +1384,7 @@
 
           </div>
 
-          <div id="recipesCrafted" class="tabcontent">
+          <div id="recipesCraftedContent" class="tabcontent">
             <input type="checkbox" id="h1" name="h1" class="checkbox class9">
             <label for="h1">Cherry Bomb</label><br>
 
@@ -1777,7 +1777,7 @@
 
           </div>
 
-          <div id="fish" class="tabcontent">
+          <div id="fishContent" class="tabcontent">
             <input type="checkbox" id="i1" name="i1" class="checkbox class10">
             <label for="i1">Pufferfish</label><br>
 
@@ -1982,7 +1982,7 @@
 
           </div>
 
-          <div id="walnuts" class="tabcontent">
+          <div id="walnutsContent" class="tabcontent">
             <label for="j1">Golden Walnuts:</label>
             <input type="number" id="j1" name="j1" min="0" max="130" oninput="validateNumber(this)" class="class11">
 
