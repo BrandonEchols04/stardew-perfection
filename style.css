@@ -6,6 +6,19 @@
 
 }
 
+a {
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #EBEBEB;
+}
+
+a:visited {
+  color: #D1D1D1;
+}
+
+
 #containerFooter{
   display: flex;
   justify-content: center;
