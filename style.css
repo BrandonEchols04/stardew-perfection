@@ -18,6 +18,71 @@ a:visited {
   color: #D1D1D1;
 }
 
+/* Will be used if I every revert to basic HTML checkboxes:
+
+input[type='checkbox'] {
+    transform: scale(1.5);
+}
+
+ */
+
+ label {
+     position: relative;
+     padding-left: 35px;
+     cursor: pointer;
+     font-size: 22px;
+     user-select: none;
+ }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+     vertical-align: middle;
+}
+
+
+
+h3{
+  font-size: 1.5em;
+}
+
+input[type="checkbox"] + label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10.5px;
+    height: 10.5px;
+    border: 1px solid #434343;
+    background-color: #404040;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    top: 3.4px;
+    left: 7.75px;
+    right: 3px;
+    bottom: 3px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+
+input[type="checkbox"]:checked + label::before {
+    background-color: #999999;
+}
 
 #containerFooter{
   display: flex;
@@ -108,7 +173,7 @@ body::after {
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
 	display: flex;
   flex-direction: column;
-  line-height: normal;
+  line-height: 1.45em;
 }
 
 #containerOptions{
@@ -224,7 +289,6 @@ select {
     width: 50px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #ccc;
     box-shadow: 0 0 10px 1px rgba(0,0,0,0.1);
     font-size: 16px;
     background-color: #393939;
